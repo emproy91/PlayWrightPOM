@@ -1,4 +1,4 @@
-# BlazeDemo Example for Playwright
+# Demo for Playwright whit flowers 🌺🌺🌺
 
 ## Installation.
 Provide clear and concise instructions on how to install your project and its dependencies. You can use the following command to install dependencies:
@@ -39,4 +39,11 @@ To set the environment you can set in command terminal:
 For Windows.
 ~~~
 set NODE_ENV=prod 
+~~~
+
+Bash.
+
+Add the following to your .bashrc profile:
+~~~
+eval "$(fnm env --use-on-cd --shell bash)"
 ~~~
