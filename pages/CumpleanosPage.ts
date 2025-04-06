@@ -20,24 +20,25 @@ export class CumpleanosPage {
 
     async navigateToCumpleanos() {
         await this.page.goto('https://www.floristeriamundoflor.com/');
+        await this.page.waitForTimeout(5000);
         await this.page.locator('#primary-menu').getByRole('link', { name: 'Cumpleaños' }).click();
     }
 
     async sortProductsByPrice() {
         await this.sortByPrice.selectOption('price');
         await this.page.goto('https://www.floristeriamundoflor.com/product-category/cumpleanos/?orderby=price');
-        await this.page.waitForTimeout(5000);
+        //await this.page.waitForTimeout(5000);
     }
 
     async addProductToCart() {
         await this.menuButton.click();
         await this.addToCartButton.click();
-        await this.page.waitForTimeout(5000);
+        //await this.page.waitForTimeout(5000);
     }
 
     async removeProductFromCart() {
         await this.removeButton.click();
-        await this.page.waitForTimeout(5000);
+        //await this.page.waitForTimeout(5000);
     }
 
     async verifyRemovedItemMessage() {

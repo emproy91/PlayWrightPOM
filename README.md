@@ -47,3 +47,7 @@ Add the following to your .bashrc profile:
 ~~~
 eval "$(fnm env --use-on-cd --shell bash)"
 ~~~
+
+## Notes.
+
+Uncomment the lines "await this.page.waitForTimeout(5000);" for slowly conections.
